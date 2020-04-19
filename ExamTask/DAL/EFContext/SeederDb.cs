@@ -80,7 +80,7 @@ namespace ExamTask.DAL.EFContext
                 {
                     Email = mail,
                     UserName = mail,
-                    PhoneNumber = "+380991111111"
+                    PhoneNumber = "+380991111111",
                 };
 
                 var result = _userManager.CreateAsync(user, "Qwerty-1").Result;

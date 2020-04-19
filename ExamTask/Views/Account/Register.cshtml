@@ -1,9 +1,11 @@
 ﻿@model ExamTask.ViewModels.RegisterViewModel
+@{
+    Layout = null;
+}
 
-
-<h2>Регистрация нового пользователя</h2>
-<form method="post" asp-controller="Account" asp-action="Register">
-    <div asp-validation-summary="ModelOnly"></div>
+<h2>Sign Up</h2>
+@*<form method="post" asp-controller="Account" asp-action="Register">*@
+@*<div asp-validation-summary="ModelOnly"></div>
     <div>
         <label asp-for="Email"></label><br />
         <input asp-for="Email" />
@@ -36,5 +38,82 @@
     </div>
     <div>
         <input type="submit" value="Регистрация" />
+    </div>*@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="~/fonts-register/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="~/vendor-register/jquery-ui/jquery-ui.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="~/css/style-register.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <form method="POST" asp-controller="Account" asp-action="Register" id="signup-form" class="signup-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first_name" asp-for="FirstName">First name</label>
+                                <input type="text" asp-for="FirstName" class="form-input" id="first_name" />
+                                <span asp-validation-for="FirstName" style="color:red;font-weight:bold; font-size:10px;"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="last_name" asp-for="LastName">Last name</label>
+                                <input type="text" asp-for="LastName" class="form-input" id="last_name" />
+                                <span asp-validation-for="LastName" style="color:red;font-weight:bold; font-size:10px;"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="last_name" asp-for="MiddleName">Middle name</label>
+                            <input type="text" asp-for="MiddleName" class="form-input" id="middle_name" />
+                            <span asp-validation-for="MiddleName" style="color:red;font-weight:bold; font-size:10px;"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" asp-for="Email">Email</label>
+                            <input type="email" asp-for="Email" class="form-input" id="email" />
+                            <span asp-validation-for="Email" style="color:red;font-weight:bold; font-size:10px;"></span>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="password" asp-for="Password">Password</label>
+                                <input type="password" asp-for="Password" class="form-input" id="password" />
+                                <span asp-validation-for="Password" style="color:red;font-weight:bold; font-size:10px;"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="re_password" asp-for="PasswordConfirm">Repeat your password</label>
+                                <input type="password" asp-for="PasswordConfirm" class="form-input" id="re_password" />
+                                <span asp-validation-for="PasswordConfirm" style="color:red;font-weight:bold; font-size:10px;"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <a class="form-back" asp-controller="Account" asp-action="Login">Back</a>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="submit" id="submit" class="form-submit" value="Submit" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
     </div>
-</form>
+
+    <!-- JS -->
+    <script src="~/vendor-register/jquery/jquery.min.js"></script>
+    <script src="~/vendor-register/jquery-ui/jquery-ui.min.js"></script>
+    <script src="~/vendor-register/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/vendor-register/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="~/js/main-register.js"></script>
+</body>
+@*</form>*@

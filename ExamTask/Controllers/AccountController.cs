@@ -42,24 +42,17 @@ namespace ExamTask.Controllers
             {
                 var user = _context.Users.FirstOrDefault(u => u.Email == model.Email);
                 if (user == null)
-                {
                     ModelState.AddModelError("", "Некорректные логин");
-                }
 
                 var result = _signInManager
-               .PasswordSignInAsync(user, model.Password, false, false).Result;
+                    .PasswordSignInAsync(user, model.Password, false, false).Result;
 
                 if (!result.Succeeded)
-                {
                     ModelState.AddModelError("", "Некорректные логин пароль");
-                }
-
-                await _signInManager.SignInAsync(user, isPersistent: false);
-
-                if (user != null)
+                else
                 {
+                    await _signInManager.SignInAsync(user, isPersistent: false);
                     await Authenticate(model.Email); // аутентификация
-
                     return RedirectToAction("Index", "Home");
                 }
                 ModelState.AddModelError("", "Некорректные логин и(или) пароль");

@@ -5,6 +5,33 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\.sass-cache-register\21880c0ffe15753a53f8402e9f64e1077e071510\style.scssc" />
+    <None Include="wwwroot\.sass-cache-register\2af427b2894d1e78c5806e231aa35d00838a84e0\style.scssc" />
+    <None Include="wwwroot\.sass-cache-register\632f5d1dd893d2e8764de51b8ca4120e25043113\extend.scssc" />
+    <None Include="wwwroot\.sass-cache-register\632f5d1dd893d2e8764de51b8ca4120e25043113\fonts.scssc" />
+    <None Include="wwwroot\.sass-cache-register\632f5d1dd893d2e8764de51b8ca4120e25043113\global.scssc" />
+    <None Include="wwwroot\.sass-cache-register\632f5d1dd893d2e8764de51b8ca4120e25043113\minxi.scssc" />
+    <None Include="wwwroot\.sass-cache-register\632f5d1dd893d2e8764de51b8ca4120e25043113\variables.scssc" />
+    <None Include="wwwroot\.sass-cache-register\643489b018602f15119d8f44aeb7fc79468873a9\main.scssc" />
+    <None Include="wwwroot\.sass-cache-register\643489b018602f15119d8f44aeb7fc79468873a9\responsive.scssc" />
+    <None Include="wwwroot\.sass-cache-register\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\extend.scssc" />
+    <None Include="wwwroot\.sass-cache-register\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\fonts.scssc" />
+    <None Include="wwwroot\.sass-cache-register\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\global.scssc" />
+    <None Include="wwwroot\.sass-cache-register\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\minxi.scssc" />
+    <None Include="wwwroot\.sass-cache-register\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\variables.scssc" />
+    <None Include="wwwroot\.sass-cache-register\abd3f6d1a9e5fdc8033c1d3baf5338152913b29e\style.scssc" />
+    <None Include="wwwroot\.sass-cache-register\db153c5e6986ea2f5f0c336e756475dbd3289ecf\extend.scssc" />
+    <None Include="wwwroot\.sass-cache-register\db153c5e6986ea2f5f0c336e756475dbd3289ecf\fonts.scssc" />
+    <None Include="wwwroot\.sass-cache-register\db153c5e6986ea2f5f0c336e756475dbd3289ecf\global.scssc" />
+    <None Include="wwwroot\.sass-cache-register\db153c5e6986ea2f5f0c336e756475dbd3289ecf\minxi.scssc" />
+    <None Include="wwwroot\.sass-cache-register\db153c5e6986ea2f5f0c336e756475dbd3289ecf\variables.scssc" />
+    <None Include="wwwroot\.sass-cache-register\f49285f1317a1cafa93ab4f5de346f92bbc40d58\main.scssc" />
+    <None Include="wwwroot\.sass-cache-register\f49285f1317a1cafa93ab4f5de346f92bbc40d58\responsive.scssc" />
+    <None Include="wwwroot\.sass-cache-register\fb6b0c202f4997afcfa31a634b7dfb6d0106b6e3\main.scssc" />
+    <None Include="wwwroot\.sass-cache-register\fb6b0c202f4997afcfa31a634b7dfb6d0106b6e3\responsive.scssc" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.Build.Tasks.Core" Version="16.5.0" />
