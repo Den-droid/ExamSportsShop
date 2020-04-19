@@ -1,94 +1,366 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿
+    <div class="site-wrap">
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how to build ASP.NET apps that can run anywhere.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner2.svg" alt="Visual Studio" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    There are powerful new features in Visual Studio for building modern web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner3.svg" alt="Microsoft Azure" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
+        <div class="site-blocks-cover overlay" style="background-image: url(template/images/hero_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
 
-<div class="row">
-    <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET Core MVC</li>
-            <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
-        </ul>
+                    <div class="col-md-12" data-aos="fade-up" data-aos-delay="400">
+
+                        <div class="row mb-4">
+                            <div class="col-md-7">
+                                <h1>Shop With Us</h1>
+                                <p class="mb-5 lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="site-section" id="products-section">
+            <div class="container">
+                <div class="row mb-5 justify-content-center">
+                    <div class="col-md-6 text-center">
+                        <h3 class="section-sub-title">Popular Products</h3>
+                        <h2 class="section-title mb-3">Our Products</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="product-item">
+                            <figure>
+                                <img src="template/images/model_1_bg.jpg" alt="Image" class="img-fluid">
+                            </figure>
+                            <div class="px-4">
+                                <h3><a href="#">Wild West Hoodie</a></h3>
+                                <div class="mb-3">
+                                    <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a> 5.0</span>
+                                    <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a> 29</span>
+                                </div>
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                <div>
+                                    <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
+                                    <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="product-item">
+                            <figure>
+                                <img src="template/images/model_2_bg.jpg" alt="Image" class="img-fluid">
+                            </figure>
+                            <div class="px-4">
+                                <h3><a href="#">Wild West Hoodie</a></h3>
+                                <div class="mb-3">
+                                    <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a> 5.0</span>
+                                    <span class="meta-icons wishlist active"><a href="#" class="mr-2"><span class="icon-heart"></span></a> 29</span>
+                                </div>
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                <div>
+                                    <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
+                                    <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="product-item">
+                            <figure>
+                                <img src="template/images/model_3_bg.jpg" alt="Image" class="img-fluid">
+                            </figure>
+                            <div class="px-4">
+                                <h3><a href="#">Wild West Hoodie</a></h3>
+                                <div class="mb-3">
+                                    <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a> 5.0</span>
+                                    <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a> 29</span>
+                                </div>
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                <div>
+                                    <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
+                                    <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="product-item">
+                            <figure>
+                                <img src="template/images/model_4_bg.jpg" alt="Image" class="img-fluid">
+                            </figure>
+                            <div class="px-4">
+                                <h3><a href="#">Wild West Hoodie</a></h3>
+                                <div class="mb-3">
+                                    <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a> 5.0</span>
+                                    <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a> 29</span>
+                                </div>
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                <div>
+                                    <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
+                                    <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="product-item">
+                            <figure>
+                                <img src="template/images/model_5_bg.jpg" alt="Image" class="img-fluid">
+                            </figure>
+                            <div class="px-4">
+                                <h3><a href="#">Wild West Hoodie</a></h3>
+                                <div class="mb-3">
+                                    <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a> 5.0</span>
+                                    <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a> 29</span>
+                                </div>
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                <div>
+                                    <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
+                                    <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="product-item">
+                            <figure>
+                                <img src="template/images/product_1_bg.jpg" alt="Image" class="img-fluid">
+                            </figure>
+                            <div class="px-4">
+                                <h3><a href="#">Wild West Hoodie</a></h3>
+                                <div class="mb-3">
+                                    <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a> 5.0</span>
+                                    <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a> 29</span>
+                                </div>
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                <div>
+                                    <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
+                                    <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="site-section" id="about-section">
+            <div class="container">
+                <div class="row align-items-lg-center">
+                    <div class="col-md-8 mb-5 mb-lg-0 position-relative">
+                        <img src="template/images/about_1.jpg" class="img-fluid" alt="Image">
+                        <div class="experience">
+                            <span class="year">Trusted Merchant</span>
+                            <span class="caption">for 50 years</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ml-auto">
+                        <h3 class="section-sub-title">Merchant Company</h3>
+                        <h2 class="section-title mb-3">About Us</h2>
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui fuga ipsa, repellat blanditiis nihil, consectetur. Consequuntur eum inventore, rem maxime, nisi excepturi ipsam libero ratione adipisci alias eius vero vel!</p>
+                        <p><a href="#" class="btn btn-black btn-black--hover rounded-0">Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="site-section border-bottom" id="team-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h3 class="section-sub-title">Team</h3>
+                        <h2 class="section-title mb-3">Leadership</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+                        <div class="person text-center">
+                            <img src="template/images/person_2.jpg" alt="Image" class="img-fluid rounded w-75 mb-3">
+                            <h3>John Rooster</h3>
+                            <p class="position text-muted">Co-Founder, President</p>
+                            <p class="mb-4">Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+                        <div class="person text-center">
+                            <img src="template/images/person_3.jpg" alt="Image" class="img-fluid rounded w-75 mb-3">
+                            <h3>Tom Sharp</h3>
+                            <p class="position text-muted">Co-Founder, COO</p>
+                            <p class="mb-4">Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
+                        <div class="person text-center">
+                            <img src="template/images/person_4.jpg" alt="Image" class="img-fluid rounded w-75 mb-3">
+                            <h3>Winston Hodson</h3>
+                            <p class="position text-muted">Marketing</p>
+                            <p class="mb-4">Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-section bg-light" id="services-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h3 class="section-sub-title">Our Services</h3>
+                        <h2 class="section-title mb-3">We Offer Services</h2>
+                    </div>
+                </div>
+                <div class="row align-items-stretch">
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                        <div class="unit-4 d-flex">
+                            <div class="unit-4-icon mr-4"><span class="text-primary icon-pie_chart"></span></div>
+                            <div>
+                                <h3>Business Consulting</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                                <p><a href="#">Learn More</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="unit-4 d-flex">
+                            <div class="unit-4-icon mr-4"><span class="text-primary icon-backspace"></span></div>
+                            <div>
+                                <h3>Market Analysis</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                                <p><a href="#">Learn More</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="unit-4 d-flex">
+                            <div class="unit-4-icon mr-4"><span class="text-primary icon-av_timer"></span></div>
+                            <div>
+                                <h3>User Monitoring</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                                <p><a href="#">Learn More</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="unit-4 d-flex">
+                            <div class="unit-4-icon mr-4"><span class="text-primary icon-beenhere"></span></div>
+                            <div>
+                                <h3>Seller Consulting</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                                <p><a href="#">Learn More</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="unit-4 d-flex">
+                            <div class="unit-4-icon mr-4"><span class="text-primary icon-business_center"></span></div>
+                            <div>
+                                <h3>Financial Investment</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                                <p><a href="#">Learn More</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                        <div class="unit-4 d-flex">
+                            <div class="unit-4-icon mr-4"><span class="text-primary icon-cloud_done"></span></div>
+                            <div>
+                                <h3>Financial Management</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                                <p><a href="#">Learn More</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="site-section testimonial-wrap" id="testimonials-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h3 class="section-sub-title">People Says</h3>
+                        <h2 class="section-title mb-3">Testimonials</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-one-item home-slider owl-carousel">
+                <div>
+                    <div class="testimonial">
+                        <figure class="mb-4 d-block align-items-center justify-content-center">
+                            <div><img src="template/images/person_3.jpg" alt="Image" class="w-100 img-fluid mb-3"></div>
+                        </figure>
+                        <blockquote class="mb-3">
+                            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                        </blockquote>
+                        <p class="text-black"><strong>John Smith</strong></p>
+
+
+                    </div>
+                </div>
+                <div>
+                    <div class="testimonial">
+
+                        <figure class="mb-4 d-block align-items-center justify-content-center">
+                            <div><img src="template/images/person_2.jpg" alt="Image" class="w-100 img-fluid mb-3"></div>
+                        </figure>
+
+                        <blockquote class="mb-3">
+                            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                        </blockquote>
+
+                        <p class="text-black"><strong>Robert Aguilar</strong></p>
+
+
+                    </div>
+                </div>
+
+                <div>
+                    <div class="testimonial">
+                        <figure class="mb-4 d-block align-items-center justify-content-center">
+                            <div><img src="template/images/person_4.jpg" alt="Image" class="w-100 img-fluid mb-3"></div>
+                        </figure>
+                        <blockquote class="mb-3">
+                            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                        </blockquote>
+                        <p class="text-black"><strong>Roger Spears</strong></p>
+
+
+                    </div>
+
+                </div>
+
+                <div>
+                    <div class="testimonial">
+                        <figure class="mb-4 d-block align-items-center justify-content-center">
+                            <div><img src="template/images/person_1.jpg" alt="Image" class="w-100 img-fluid mb-3"></div>
+                        </figure>
+                        <blockquote class="mb-3">
+                            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                        </blockquote>
+                        <p class="text-black"><strong>Kyle McDonald</strong></p>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
     </div>
-    <div class="col-md-3">
-        <h2>How to</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Run &amp; Deploy</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
-        </ul>
-    </div>
-</div>
