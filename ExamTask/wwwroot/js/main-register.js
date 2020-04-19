@@ -40,3 +40,17 @@
         equalTo: ""
     });
 })(jQuery);
+
+function myFunction(a) {
+    var x = document.getElementsByClassName("my_pass");
+    var eye = document.getElementsByClassName("toggle-password");
+    if (x[a].type === "password") {
+        x[a].type = "text";
+        eye[a].classList.remove("fa-eye");
+        eye[a].classList.add("fa-eye-slash");
+    } else {
+        x[a].type = "password";
+        eye[a].classList.remove("fa-eye-slash");
+        eye[a].classList.add("fa-eye");
+    }
+}
